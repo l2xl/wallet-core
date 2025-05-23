@@ -29,7 +29,7 @@ function noArgs() {
 # Whether the command line arguments contain a target.
 # Returns `true` if either no arguments are specified, or `all`, or the exact target specified.
 function isTargetSpecified() {
-  if noArgs || containsArg "all" || containsArg "$1"; then
+  if containsArg "all" || containsArg "$1"; then
     return 0
   fi
   return 1

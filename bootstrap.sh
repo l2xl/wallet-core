@@ -14,12 +14,12 @@ if isHelp; then
   exit 0
 fi
 
-echo "#### Installing system dependencies ... ####"
-if [[ $(uname) == "Darwin" ]]; then
-  tools/install-sys-dependencies-mac
-else
-  tools/install-sys-dependencies-linux
-fi
+#echo "#### Installing system dependencies ... ####"
+#if [[ $(uname) == "Darwin" ]]; then
+#  tools/install-sys-dependencies-mac
+#else
+#  tools/install-sys-dependencies-linux
+#fi
 
 echo "#### Installing C++ libraries ... ####"
 tools/install-dependencies
