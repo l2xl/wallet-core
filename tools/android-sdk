@@ -27,7 +27,7 @@ find_android_ndk() {
 find_android_cmdline_tools() {
     # Default version of cmdline tools is 11.
     # https://github.com/android-actions/setup-android/blob/9584f05408b63719e3464df8ac85bdbe58f88a64/src/main.ts#L9
-    CMDLINE_TOOLS_VERSION="latest"
+    CMDLINE_TOOLS_VERSION="11.0"
 
     if [[ "$ANDROID_HOME" == "" ]]; then
         >&2 echo "ANDROID_HOME is not set. Use a default path"
